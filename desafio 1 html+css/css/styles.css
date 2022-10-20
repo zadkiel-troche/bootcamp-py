@@ -22,6 +22,10 @@ html{
 }
 
 /* banner */
+@media only screen and (min-width: 517px) {
+
+}
+
 div#banner{
     width: 100%;
     height: 400px;
@@ -37,7 +41,7 @@ img#img_banner{
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    min-width: 500px;
+    min-width: 100px;
 }
 
 /* header */
@@ -113,6 +117,20 @@ h1{
 }
 
 /* media object */
+@media only screen and (max-width: 675px) {
+    .card-item{
+        display: block;
+        gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 676px) {
+    .container .card-item{
+        display: flex;
+        gap: 50px;
+    }
+}
+
 .container .card{
     padding: 50px;
     background-color: var(--card-background-color);
@@ -133,11 +151,6 @@ h1{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.container .card-item{
-    display: flex;
-    gap: 50px;
 }
 
 .container .card-head{
