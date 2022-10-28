@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @navbar %>
+
+<div>
+  <%= link_to "Edit this navbar", edit_navbar_path(@navbar) %> |
+  <%= link_to "Back to navbars", navbars_path %>
+
+  <%= button_to "Destroy this navbar", @navbar, method: :delete %>
+</div>
