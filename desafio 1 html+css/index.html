@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- google fotns -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Desafio HTML+CSS</title>
+</head>
+<body>
+    <!-- banner -->
+    <div id="banner">
+        <img src="img/desafio.png" alt="imagen del banner" id="img_banner">
+    </div>
+    <!-- end banner -->
+
+    <!-- navbar -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        
+        <nav>
+            <ul class="menu-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#media-object">Media Object</a></li>
+                <li><a href="#product-card">Product Card</a></li>
+            </ul>
+        </nav>
+        
+        <div class="buscador">
+            <form action="#">
+                <label for="buscador">Buscar</label>
+                <input type="text" name="buscador" id="buscador" placeholder="Busque aquí">
+            </form>
+        </div>
+    </header>
+    <!-- end navbar -->
+
+    <div class="container">
+        <h1>Media Object</h1>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus vel earum aliquam facilis ea. Aut facilis nam similique molestiae et enim tempore? Ratione sunt ut saepe magni illum quas quibusdam.</p>
+
+        <!-- media oject -->
+        <section class="card mb-20" id="media-object">
+            <div class="card-item">
+                <div class="card-head">
+                    <img src="img/html-logo.png" alt="Logo HTML">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title mb-20">HTML</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia repellendus adipisci provident neque doloremque nisi est amet aliquid aperiam! Totam perferendis numquam quisquam officia sunt dicta laborum ipsa expedita corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellendus eaque doloribus hic dolor nihil explicabo corrupti, fugiat sunt modi aut commodi, eius nostrum eum. Tempora possimus doloribus molestias nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur minus autem veniam consequuntur obcaecati. Neque quaerat omnis labore tempore delectus architecto, ipsa alias doloribus autem animi. Unde impedit dignissimos hic.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end media object -->
+
+        <h1>Product Card</h1>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus vel earum aliquam facilis ea. Aut facilis nam similique molestiae et enim tempore? Ratione sunt ut saepe magni illum quas quibusdam.</p>
+        
+        <!-- product card -->
+        <section class="product-card" id="product-card">
+            <div class="product-card-item">
+                <div class="product-card-head mb-20">
+                    <p class="msg-product">Nuevo</p>
+                    <img src="img/product-2.jpg" alt="Producto 1">
+                    <hr>
+                </div>
+                <div class="product-card-body">
+                    <div class="text-center mb-20">
+                        <p>Categoria: <a href="#">TV's</a></p>
+                    </div>
+                    <div class="product-title text-center">
+                        <p>TV LED LG 32" HD SMART LM637BPSB</p>
+                    </div>
+                    <p class="text-center mb-20">
+                        1.799.000 ₲
+                    </p>
+                    <div class="btn">
+                        <button class="mb-20 btn-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-item">
+                <div class="product-card-head mb-20">
+                    <img src="img/product-1.jpg" alt="Logo HTML">
+                    <hr>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-title text-center">
+                        <p>AURICULAR ORAIMO AIRBUDS 2 OEB-E92D</p>
+                    </div>
+                    <p class="clasificacion text-center mb-20">
+                        5
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3" checked>
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                        0
+                    </p>
+                    <p class="text-center mb-20">
+                        4.558.000 ₲
+                    </p>
+                    <div class="btn">
+                        <button class="mb-20 btn-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-item">
+                <div class="product-card-head mb-20">
+                    <img src="img/product-3.jpg" alt="Logo HTML">
+                    <hr>
+                </div>
+                <div class="product-card-body">
+                    <div class="product-title text-center">
+                        <p>TABLET CHUWI SURPAD 4G LTE 10.1</p>
+                    </div>
+                    <p class="mb-20"> 
+                        Marca: <a href="#">Chuwi</a>
+                    </p>
+                    <p class="text-center mb-20">
+                        458.000 ₲
+                    </p>
+                    <div class="btn">
+                        <button class="mb-20 btn-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end product card -->
+
+    </div>
+</body>
+</html>
